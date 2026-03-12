@@ -309,7 +309,7 @@ Frontend runs at: `http://localhost:5173`
 
 ---
 
-##  Screenshots
+##  SnapShot
 
 ![DDoS Live Map](./DDoS_.png)
 
