@@ -329,7 +329,7 @@ Frontend runs at: `http://localhost:5173`
 ##  Author
 
 **Pandeti Mohan Sai**
-BTech CSE Data Science — Mohan Babu University (2026)
+> BTech CSE Data Science — Mohan Babu University (2026)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mohansaipandeti-blue)](https://linkedin.com/in/mohansaipandeti)
 [![GitHub](https://img.shields.io/badge/GitHub-MohanSaiPandeti-black)](https://github.com/MohanSaiPandeti)
