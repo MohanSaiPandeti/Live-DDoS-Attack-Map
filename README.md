@@ -1,4 +1,4 @@
-# ⚡ Live DDoS Attack Map
+#  Live DDoS Attack Map
 
 > Real-time global DDoS attack visualization powered by AbuseIPDB, Cloudflare Radar, WebSockets, and a 3D interactive globe.
 
@@ -6,29 +6,29 @@
 
 ---
 
-## 🌍 Overview
+##  Overview
 
-**Live DDoS Attack Map** is a full-stack cybersecurity dashboard that tracks, classifies, and visualizes DDoS attacks in real time across a 3D rotating globe. Attackers are geolocated from their IPs, scored by confidence, and rendered as animated arcs flying toward a target server — all streamed live via WebSockets.
+**Live DDoS Attack Map** is a full-stack cybersecurity dashboard that tracks, classifies, and visualizes DDoS attacks in real time across a 3D rotating globe. Attackers are geolocated from their IPs, scored by confidence, and rendered as animated arcs flying toward a target server - all streamed live via WebSockets.
 
 This project demonstrates end-to-end data engineering: API ingestion → geolocation → real-time streaming → interactive visualization.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🌐 **3D Rotating Globe** — attack arcs animated in real time using `globe.gl` (Three.js)
-- 🔴 **Live Attack Feed** — scrolling list of attacker IPs, cities, countries, and confidence scores
-- 📊 **DDoS Traffic Trends** — area chart showing attack percentage over time from Cloudflare Radar
-- 🧠 **IP Confidence Scoring** — AbuseIPDB confidence score (≥80%) used to classify and color-code threats
-- 🗺️ **IP → Geo Resolution** — real-time IP geolocation via ip-api.com (lat/lon, city, country, ISP)
-- 📡 **WebSocket Streaming** — new attack arcs pushed to frontend instantly, no polling
-- 🔄 **Auto-reconnect** — frontend WebSocket auto-reconnects on drop with exponential backoff
-- 🧪 **Mock Data Fallback** — works fully without API keys for development and demo
-- 🌓 **Protocol Breakdown** — Cloudflare L3 attack protocol split (UDP / TCP / ICMP / GRE)
+-  **3D Rotating Globe** - attack arcs animated in real time using `globe.gl` (Three.js)
+-  **Live Attack Feed** - scrolling list of attacker IPs, cities, countries, and confidence scores
+-  **DDoS Traffic Trends** - area chart showing attack percentage over time from Cloudflare Radar
+-  **IP Confidence Scoring** - AbuseIPDB confidence score (≥80%) used to classify and color-code threats
+-  **IP → Geo Resolution** - real-time IP geolocation via ip-api.com (lat/lon, city, country, ISP)
+-  **WebSocket Streaming** - new attack arcs pushed to frontend instantly, no polling
+-  **Auto-reconnect** - frontend WebSocket auto-reconnects on drop with exponential backoff
+-  **Mock Data Fallback** - works fully without API keys for development and demo
+-  **Protocol Breakdown** - Cloudflare L3 attack protocol split (UDP / TCP / ICMP / GRE)
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -157,7 +157,7 @@ Live-DDoS-Attack-Map/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -286,7 +286,7 @@ Frontend runs at: `http://localhost:5173`
 
 ---
 
-## 🎨 Globe Color Coding
+##  Globe Color Coding
 
 | Color | Confidence Score | Threat Level |
 |-------|-----------------|--------------|
@@ -297,7 +297,7 @@ Frontend runs at: `http://localhost:5173`
 
 ---
 
-## 🚀 How It Works
+##  How It Works
 
 1. **Polling** — Every 60 seconds, the backend scheduler fetches up to 100 blacklisted IPs from AbuseIPDB filtered by confidence score ≥ 80%
 2. **Geolocation** — Each IP is resolved to lat/lon coordinates via ip-api.com (batched with rate limiting)
@@ -315,7 +315,7 @@ Frontend runs at: `http://localhost:5173`
 
 ---
 
-## 🔮 Roadmap for Future Work
+##  Roadmap for Future Work
 
 - [ ] ML-based IP classification (Random Forest on report count, categories, ASN)
 - [ ] Redis for multi-worker state management
@@ -329,7 +329,7 @@ Frontend runs at: `http://localhost:5173`
 ##  Author
 
 **Pandeti Mohan Sai**
-> BTech CSE Data Science — Mohan Babu University (2026)
+> BTech CSE Data Science, Mohan Babu University (2026)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mohansaipandeti-blue)](https://linkedin.com/in/mohansaipandeti)
 [![GitHub](https://img.shields.io/badge/GitHub-MohanSaiPandeti-black)](https://github.com/MohanSaiPandeti)
